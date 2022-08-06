@@ -1,0 +1,2 @@
+from generators.random_walk_corridor import RandomWalkCorridorGenerator
+from generators.simple_random_walk import SimpleRandomWalkGenerator
