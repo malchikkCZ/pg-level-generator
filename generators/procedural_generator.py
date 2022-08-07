@@ -9,7 +9,7 @@ class ProceduralGenerator:
     def __init__(self):
         self.grid_width = GRID_WIDTH
         self.grid_height = GRID_HEIGHT
-        self.grid_padding = GRID_PADDING
+        self.grid_padding = GRID_PADDING * 2
 
         self.possible_directions = [
             pygame.math.Vector2(1, 0),

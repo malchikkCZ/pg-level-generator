@@ -6,21 +6,22 @@ from source.generator import LevelGenerator
 
 class Level:
 
-    def __init__(self, game):
+    def __init__(self, game, method='rooms'):
         self.game = game
         self.level = {}
 
         self.level_generator = LevelGenerator()
+        self.method = method
         self.get_new_level()
     
     def get_new_level(self):
-        self.level = self.level_generator.get_new_level()
+        self.level = self.level_generator.get_new_level(self.method)
 
     def draw(self):
         colors = {
             '0': 'darkgray',
             '1': 'brown',
-            '8': 'yellow',
+            '8': 'blue',
             '9': 'green'
         }
 
@@ -28,5 +29,5 @@ class Level:
             pygame.draw.rect(
                 self.game.screen, 
                 colors[self.level[pos]], 
-                (pos[0] * 10, pos[1] * 10, 10, 10)
+                (pos[0] * 16, pos[1] * 16, 16, 16)
             )

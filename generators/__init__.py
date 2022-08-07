@@ -1,2 +1,3 @@
+from generators.binary_space_parting import BinarySpacePartingGenerator
 from generators.random_walk_corridor import RandomWalkCorridorGenerator
 from generators.simple_random_walk import SimpleRandomWalkGenerator

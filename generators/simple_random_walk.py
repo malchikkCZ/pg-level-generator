@@ -11,7 +11,7 @@ class SimpleRandomWalkGenerator(ProceduralGenerator):
         super().__init__()
         self.start_randomly = start_randomly
 
-    def generate(self, start_pos, iterations=10, walk_length=10):
+    def generate(self, start_pos, iterations=20, walk_length=20):
         path = []
         path.append(start_pos)
         for _ in range(iterations):

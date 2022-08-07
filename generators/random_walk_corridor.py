@@ -8,7 +8,7 @@ class RandomWalkCorridorGenerator(ProceduralGenerator):
     def __init__(self):
         super().__init__()
 
-    def generate(self, start_pos, corridor_length=14, corridor_count=5):
+    def generate(self, start_pos, corridor_length=20, corridor_count=10):
         corridor = [start_pos]
         room_positions = []
         for _ in range(corridor_count):

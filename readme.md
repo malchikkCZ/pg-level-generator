@@ -2,7 +2,7 @@
 
 Technical demo for my future game.
 
-It covers procedural level generation with Random Walk algorithm and Binary Space Partitioning Algorithm (tbd).
+It covers procedural level generation with Binary Space Partitioning Algorithm and Random Walk algorithm.
 
 <br>
 
